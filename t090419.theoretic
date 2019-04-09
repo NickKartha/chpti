@@ -1,0 +1,44 @@
+>> // == Defining Non-Interactive IO Structures == //
+
+>> m: i"enter home?(y/n):".inpdef('y': 'get in', 'n': 'get out', *:'invalid') ;;
+
+/#~ enter home?(y/n)
+>> potato
+/#~ invalid
+
+>> m('y')
+/#~ get in
+
+>> m('n')
+/#~ get out
+
+>> // ======================= //
+
+>> imp man
+installing man ...
+[################################] 100/100
+
+>> open(man)
+typestruct:: {{[ age, dob, name, link, ...]}}  
+
+>> man.age
+NaN
+
+>> man.age = 21
+21
+
+>> set(man.age, 21)
+man.age set to 21
+
+>> assign(man.age, 21)
+valid assignment
+
+>> // ========================== //
+
+>> o"hello"
+/#~ hello
+
+>> o%PATH%
+C:/Users/User/Temp/CHPTI/...
+
+>> // =========================== //
